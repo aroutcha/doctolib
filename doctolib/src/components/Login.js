@@ -23,27 +23,49 @@ class Login extends Component {
         console.log(`checked = ${e.target.checked}`);
       }
     clickConnect = () => {
-        if(login(this.state.user.login, this.state.user.password)){
-            changeIsLogged(true)
-            if(this.props.match.params.url != undefined) {
-                this.props.history.push("/"+this.props.match.params.url)
-            }
-            else {
-                this.props.history.push("/")
-            }
-        }
-        else {
-            notification.open({
-                message: 'Erreur login',
-                description:
-                  'Merci de corriger les informations de login',
-                onClick: () => {
-                  console.log('Notification Clicked!');
-                },
-                duration : 2
-              });
-        }
-    }
+        
+            login(this.state.user.login, this.state.user.password).then(res => {
+                if(res.data.token != null) {
+                    changeIsLogged(true)
+                    localStorage.setItem('token', res.data.token)
+                }
+                else {
+                    notification.open({
+                        message: 'Erreur login',
+                        description:
+                          'Merci de corriger les informations de login',
+                        onClick: () => {
+                          console.log('Notification Clicked!');
+                        },
+                        duration : 2
+                      });
+                }
+            })
+
+
+
+
+    //     if(login(this.state.user.login, this.state.user.password)){
+    //         changeIsLogged(true)
+    //         if(this.props.match.params.url != undefined) {
+    //             this.props.history.push("/"+this.props.match.params.url)
+    //         }
+    //         else {
+    //             this.props.history.push("/")
+    //         }
+    //     }
+    //     else {
+    //         notification.open({
+    //             message: 'Erreur login',
+    //             description:
+    //               'Merci de corriger les informations de login',
+    //             onClick: () => {
+    //               console.log('Notification Clicked!');
+    //             },
+    //             duration : 2
+    //           });
+       }
+        
     render() { 
         return ( 
 

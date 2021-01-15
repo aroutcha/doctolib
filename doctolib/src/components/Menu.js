@@ -23,7 +23,7 @@ class Menu extends Component {
                                 <Link to='/addPraticien' className="blue-button-label">Vous êtes professionnel de santé ? </Link>
                             </li>
                             <li className="nav-item m-5">
-                            <Link to='/' className="a1"  ><QuestionCircleOutlined />Besoin d'aide ?</Link>
+                            <Link to='/calendar' className="a1"  ><QuestionCircleOutlined />Besoin d'aide ?</Link>
                             </li>
                             <li className="nav-item m-5">
                                 <Link to='/compte'  className="a2">Se connecter <UserOutlined /><br/> Mes RDV</Link>

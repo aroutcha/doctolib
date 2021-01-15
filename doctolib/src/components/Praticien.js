@@ -41,7 +41,7 @@ const Praticien = (props) => {
             </div>
             <br/>
             <div className="row m-1">
-                <Link className="btn btn-primary" to={'/detail/' + praticien.id}>PRENDRE RENDEZ-VOUS</Link>
+                <Link className="btn btn-primary" to={'/detail/' + praticien.id }>PRENDRE RENDEZ-VOUS</Link>
             </div>
         </div>
     )

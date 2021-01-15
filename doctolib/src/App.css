@@ -1,4 +1,10 @@
 
+body{
+  background-color: #eef2f6ef!important;
+}
+
+
+
 .div.container.Praticien{
   background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 100%, 0.5)), url(https://info.doctolib.fr/wp-content/uploads/2020/06/home_BG2.jpg);
   background-position: 50%;
@@ -452,4 +458,88 @@ div.container.Praticien{
 }
 
 
+.progression {
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 14px;
+}
 
+div.profil {
+  background-color: rgba(67,95,113,0.9);
+  background-size: cover;
+  height: 120px;
+  display: flex;
+}
+.header-name{
+  padding-top: 30px;
+  color: #fff;
+  font-family: "Montserrat",arial,sans-serif;
+  line-height: 5px;
+  font-size: 26px;
+  margin-left:350px!important;
+}
+.header-specialite{
+  font-weight: 400;
+  line-height: 10px;
+  font-size: 14px;
+  color: #fff!important;
+  margin-left:350px!important;
+}
+
+
+ nav.navbar.profil{
+ 
+  width: 840px;
+  height: 60px;
+  font-family: "Montserrat",arial,sans-serif;
+  font-size: 16px;
+  margin: 1.5%;
+ 
+} 
+a.essentiel,.carte,.presentation,.horaire,.tarifs{
+  color: #46555f!important;
+}
+h8.covid-profil{
+  background: #bef2d3;
+  font-size: 14px;
+  font-weight: bold;
+    padding: 8px;
+    padding-top: 9px;
+    margin-left:150px!important;
+    width:700px;
+    border-radius:8px 8px 0px 0px;
+}
+p{
+  margin-left:150px!important;
+  border-radius:0px 0px 8px 8px;
+  width:700px;
+  font-size: 14px;
+  font-weight: 700;
+    padding: 30px;
+    color: #224358;
+    background-color: #fff;
+}
+
+div.tarifs{
+  margin-left:150px!important;
+  border-radius:0px 0px 8px 8px;
+  width:700px;
+  font-size: 14px;
+  color: #435f71;
+font-size: 14px;
+  line-height: 24px;
+    padding: 30px;
+  
+    background-color: #fff;
+
+}
+a.tarifs{
+  font-weight: 700;
+
+}
+
+#components-grid-demo-flex [class~='ant-row'] {
+  background: rgba(128, 128, 128, 0.08);
+}
